@@ -1,6 +1,6 @@
 const Navbar = () => {
     return (
-        <div style={{backgroundColor:"red"}}>
+        <div className="bg-red-700">
 
 <h1 className="text-4xl text-center p-4 text-white fonting">Simple Comment Board</h1>
 
