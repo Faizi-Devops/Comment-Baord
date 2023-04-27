@@ -37,9 +37,12 @@ const Coment = () => {
 
 
             </div>
-            <div className="pt-4">
+            {
+                data.map(()=>{
+                    return(
+                        <div className="pt-4">
 
-                <div className="mx-auto max-w-4xl  pt-2 px-3 pb-4 bg-white border border-gray-200 rounded-sm shadow dark:bg-gray-800 dark:border-gray-700">
+                <div className="mx-auto max-w-4xl  pt-2 px-4 pb-4 bg-white border border-gray-200 rounded-sm shadow dark:bg-gray-800 dark:border-gray-700">
                     <div className="grid grid-cols-2 gap-4">
                         <div>
 
@@ -52,10 +55,17 @@ const Coment = () => {
                             <button className="px-2  rounded-full text-white bg-red-700 hover:bg-green-600">Delete</button>
                         </div>
                     </div>
+                    <hr />
+                    <p className="mb-3 mt-4 text-gray-500 dark:text-gray-400">Hello</p>
                 </div>
 
 
             </div>
+
+                    )
+                })
+            }
+            
         </div>
 
     )
